@@ -207,12 +207,14 @@ nothing to commit, working directory clean
 
 9.  Submit a Pull Request
 
-### Submitting a Pull Request
+### Troubleshooting GitHub Actions Workflow Issues
+
+If the GitHub Actions run fails, follow these steps to troubleshoot and resolve the issues:
 
 1.  Once the edits have been committed, you will be prompted to create a pull
     request on your fork's GitHub Page.
 
-2.  Submit a pull request from your branch to FreeCodeCamp's Pantry-for-Good `staging` branch.
+2.  Submit a pull request from your branch to FreeCodeCamp's Pantry-for-Good `staging` branch, including information on addressing and fixing error logs if the GitHub Actions run has failed.
 
 3.  The title (also called the subject) of your PR should be descriptive of your
     changes and succinctly indicates what is being fixed.
@@ -240,7 +242,9 @@ This keeps your working fork clean.
 You can do this with a press of a button on the GitHub PR interface. You can
 delete the local copy of the branch with: `git branch -D branch/to-delete-name`
 
-#### If your PR is rejected
+### Making Necessary Changes to Fix the Issues Indicated by the Error Logs
+
+If the PR is rejected and the GitHub Actions failure is related to code changes, follow these steps to resolve the issues and resubmit the PR:
 
 Don't despair! You should receive solid feedback from the moderators as to
 why it was rejected and what changes are needed.
