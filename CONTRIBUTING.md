@@ -1,5 +1,7 @@
 # Contributor's Guide
 
+If your PR is rejected due to unresolved issues indicated by the error logs, follow these steps to receive feedback from the moderators, make the necessary changes, and resubmit the PR:
+
 We welcome pull requests from Free Code Camp campers (our students) and seasoned JavaScript developers alike! Follow these steps to contribute:
 
 1. Find an issue that needs assistance by searching for the [Help Wanted](https://github.com/freeCodeCamp/Pantry-for-Good/labels/help%20wanted) tag.
@@ -112,6 +114,10 @@ Do this prior to every time you create a branch for a pull request:
   > ```
 
   > This will overwrite the staging branch of your fork.
+
+### Pull Request Rejection and Resubmission
+
+If your PR is rejected due to unresolved issues indicated by the error logs, follow these steps to receive feedback from the moderators, make the necessary changes, and resubmit the PR:
 
 ### Setup Pantry-for-Good
 
@@ -242,20 +248,49 @@ This keeps your working fork clean.
 You can do this with a press of a button on the GitHub PR interface. You can
 delete the local copy of the branch with: `git branch -D branch/to-delete-name`
 
-### Making Necessary Changes to Fix the Issues Indicated by the Error Logs
+### Receiving Feedback from Moderators
+
+Once your PR is rejected, you should receive solid feedback from the moderators as to why it was rejected and what changes are needed.
 
 If the PR is rejected and the GitHub Actions failure is related to code changes, follow these steps to resolve the issues and resubmit the PR:
 
 Don't despair! You should receive solid feedback from the moderators as to
 why it was rejected and what changes are needed.
 
-Many Pull Requests, especially first Pull Requests, require correction or
-updating. If you have used the GitHub interface to create your PR, you will need
-to close your PR, create a new branch, and re-submit.
+If the PR is rejected and the GitHub Actions failure is related to code changes, follow these steps to resolve the issues and resubmit the PR:
 
-If you have a local copy of the repo, you can make the requested changes and
-amend your commit with: `git commit --amend` This will update your existing
-commit. When you push it to your fork you will need to do a force push to
-overwrite your old commit: `git push --force`
+1. If you have used the GitHub interface to create your PR, you will need to close your PR and create a new branch to make the necessary modifications.
+2. Branch Naming: Name the branch something like `fix/xxx` or `feature/xxx` where `xxx` is a short description of the changes or feature you are attempting to add (e.g., `fix/email-login` for fixing something specific to email login).
+3. Creating a New Branch
+
+To create a new branch on your local machine (and switch to this branch):
+```shell
+$ git checkout -b [name_of_your_new_branch]
+```
+
+4. Pushing to GitHub
+
+To push to GitHub:
+```shell
+$ git push origin [name_of_your_new_branch]
+```
+
+1. After making the required changes, you can amend your commit with the following command, which will update your existing commit:
+
+```shell
+$ git commit --amend
+```
+
+2. Pushing to GitHub
+
+When you push it to your fork, you will need to do a force push to overwrite your old commit:
+
+```shell
+$ git push --force
+```
+
+3. Post in the PR Conversation
+
+Be sure to post in the PR conversation that you have made the requested changes.
 
 Be sure to post in the PR conversation that you have made the requested changes.
