@@ -166,6 +166,10 @@ This bit is up to you!  After you make changes be sure to fix any lint warnings 
 
 ### Creating a Pull Request
 
+#### Troubleshooting GitHub Actions
+
+For detailed troubleshooting guidance, refer to the [github_actions.md](github_actions.md) file.
+
 #### What is a Pull Request?
 
 A pull request (PR) is a method of submitting proposed changes to a GitHub repository. You will make changes to copies of the files which make up Pantry-for-Good in a personal fork, then apply to have them accepted by Pantry-for-Good proper.
@@ -215,6 +219,8 @@ nothing to commit, working directory clean
 
 ### Troubleshooting GitHub Actions Workflow Issues
 
+For detailed troubleshooting guidance, refer to the [github_actions.md](github_actions.md) file.
+
 If the GitHub Actions run fails, follow these steps to troubleshoot and resolve the issues:
 
 1.  Once the edits have been committed, you will be prompted to create a pull
@@ -257,7 +263,7 @@ If the PR is rejected and the GitHub Actions failure is related to code changes,
 Don't despair! You should receive solid feedback from the moderators as to
 why it was rejected and what changes are needed.
 
-If the PR is rejected and the GitHub Actions failure is related to code changes, follow these steps to resolve the issues and resubmit the PR:
+If the PR is rejected and the GitHub Actions failure is related to code changes, follow these steps to resolve the issues and resubmit the PR. For detailed troubleshooting guidance, refer to the [github_actions.md](github_actions.md) file.
 
 1. If you have used the GitHub interface to create your PR, you will need to close your PR and create a new branch to make the necessary modifications.
 2. Branch Naming: Name the branch something like `fix/xxx` or `feature/xxx` where `xxx` is a short description of the changes or feature you are attempting to add (e.g., `fix/email-login` for fixing something specific to email login).
